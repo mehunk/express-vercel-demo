@@ -14,4 +14,9 @@ app.get('/item/:slug', (req, res) => {
   res.end(`Item: ${slug}`);
 });
 
+app.delete('/item/:slug', (req, res) => {
+  const { slug } = req.params;
+  res.end(`Item: ${slug} has been deleted!`);
+});
+
 export default app;
