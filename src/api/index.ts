@@ -1,6 +1,8 @@
 import express from 'express';
 
-async function getApp () {
+import { Express } from 'express'
+
+async function getApp (): Promise<Express> {
   const app = express();
 
   app.get('/', (req, res) => {
